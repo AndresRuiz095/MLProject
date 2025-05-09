@@ -36,9 +36,9 @@ def predict_datapoint():
 
         predict_pipeline=PredictPipeline()
         print("Mid Prediction")
-        result=predict_pipeline.predict(pred_df)
+        results=predict_pipeline.predict(pred_df)
         print("after Prediction")
-        return render_template('home.html', results = result[0][0])
+        return render_template('home.html', results = results[0])
     
 
 if __name__=="__main__":
